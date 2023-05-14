@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medias</title>
+</head>
+<body>
+    <h1>dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos
+        diferentes ou so diminuir e aumentar 
+        o tamanho da janela do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio preload="metadata" autoplay loop>
+        <source src="media/attention.mp3" type="audio/mpeg">
+        <source src="media/attention.ogg" type="audio/ogg">
+        <source src="media/attention.wav" type="audio/wave">
+    </audio>
+    <p>desculpe seu navegador nao pode reproduzir o
+        audio automaticamente! Mas voce pode baixar o 
+        arquivo clicando <a href="media/attention.mp3">AQUI</a>
+    </p>
+    <h2>aqui embaixo tem o controle para escutar musica no site</h2>
+    <audio src="media/attention.mp3" controls autoplay></audio>
+</body>
+</html>
